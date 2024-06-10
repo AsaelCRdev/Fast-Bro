@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    border:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.contenedor{
+    background-color:#F6F3F3;
+   padding-bottom: 40px;
+}
+.header{
+    padding-top:10px;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo p{
+   font-weight: 900;
+   font-size: 40px;
+   margin-top: 25px;
+ }
+.logo span{
+   color: rgb(255, 100, 0); 
+}
+.hamburguesa{
+    width: 30px;
+}
+@media(min-width:765px){
+    .hamburguesa{
+        display: none;
+    }
+}
+.hamburguesa:hover{
+    cursor: pointer;
+}
+/*navegacion*/
+.menu{
+    display: none;
+}
+@media(min-width:765px){
+    .menu{
+        display: flex;
+    }
+}
+.navegacion{
+    display: flex;
+   list-style: none;
+}
+@media(min-width:765px){
+    .navegacion{
+        gap: 30px;
+    }
+}
+@media(min-width:995px){
+    .navegacion{
+        gap: 50px;
+    }
+}
+.navegacion a{
+    text-decoration: none;
+    color: rgb(97,97 ,97 );
+    font-weight: 400;
+    font-size: 20px;
+   
+}
+.navegacion a:hover{
+    color: rgb(255, 100, 0); 
+}
+.navegacion li:last-child{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navegacion li:last-child a{
+   font-weight: 700;
+}
+.navegacion li:last-child a:last-child{
+background-color:  rgb(255, 100, 0); 
+color: white;
+padding: 2.5px;
+border-radius: 10px;
+border: 3.5px solid black;
+}
+.navegacion li:last-child a:last-child:hover{
+    background-color: rgb(255, 255, 255) ; 
+    color:  rgb(255, 100, 0);
+}
+/*Informacion*/
+.presentacion{
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+@media(min-width:765px){
+   .presentacion{
+    flex-direction: row;
+   }
+}
+.informacion{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media(min-width:765px){
+    .informacion{
+        text-align: start;
+    }
+ }
+ .informacion--boton button{
+    background-color:  rgb(255, 100, 0); 
+    color: white;
+    padding: 2.5px;
+    border-radius: 10px;
+    border: 3.5px solid black;
+    font-weight: 700;
+    font-size: 15px;
+ }
+ .informacion--boton button:hover{
+    background-color: rgb(255, 255, 255) ; 
+    color:  rgb(255, 100, 0);;
+ }
+ /*informacion imagen*/
+
+ .presentacion--img{
+    max-width: 300px;
+    filter: drop-shadow(0 1mm 3mm rgb(255, 255, 255));/*da un efecto de sobreaso a los elemenmtos*/
+}
+@media(min-width:465px){
+  .presentacion--img{
+    max-width: 500px;
+  }
+}
+ @media(min-width:1024px){
+    .presentacion--img{
+      max-width: 800px;
+    }
+}
+/*Tarjetas*/
+.comida{
+    width: 90%;
+    margin-inline: auto;
+}
+.platos{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 85px
+}
+@media(min-width:765px){
+    .platos{
+      grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:992px){
+    .platos{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.comida--title{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 85px;
+}
+.plato #Boton1{
+    color:  rgb(255, 100, 0);;
+    font-weight: 400;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 25px;
+}
+.plato #Boton2{
+    color:  rgb(255, 100, 0);;
+    font-weight: 400;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+.plato #Boton3{
+    color:  rgb(255, 100, 0);;
+    font-weight: 400;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+.plato #Boton4{
+    color:  rgb(255, 100, 0);;
+    font-weight: 400;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+@media(min-width:765px){
+    .platos{
+     text-align: start;
+    }
+}
+/*contenedor tarjetas*/
+.plato{
+    width: 80%;
+    margin-inline: auto;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    text-align: center;
+    border-radius:10px;
+    border: 1px solid rgb(rgb(44, 44, 44), rgb(12, 12, 12), rgb(13, 13, 14));
+
+}
+.plato img{
+    width: 250px;
+    filter: drop-shadow(0 1mm 3mm rgb(255,166,0));
+
+}
+.plato li{
+    font-size: 15px;
+    color:rgb(7, 7, 7)
+}
+.plato--info{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+.plato--info p{
+    font-weight: 900;
+}
+.plato--info button{
+    background-color: rgb(245, 81, 6);
+    color:white ;
+    font-weight: 400;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+.plato--info button:hover{
+    cursor: pointer;
+}

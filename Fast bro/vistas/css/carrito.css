@@ -1,0 +1,62 @@
+header {
+    background-color: #ffb158;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+.carrito {
+    padding: 1rem;
+}
+
+.lista-productos {
+    list-style-type: none;
+    padding: 0;
+}
+
+button {
+    background-color: #ffb158;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #ffb158;
+}
+
+/* Cambios para la ventana emergente */
+.ventana-emergente {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 500px;
+    max-height: 80%;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
